@@ -1,12 +1,13 @@
 // Firebase Config (Replace with your Firebase credentials)
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
-};
+    apiKey: "AIzaSyBkDdJetfyAwQqsYVKp5a8hGxC1fzQfSkA",
+    authDomain: "minik-2486f.firebaseapp.com",
+    projectId: "minik-2486f",
+    storageBucket: "minik-2486f.firebasestorage.app",
+    messagingSenderId: "507980853656",
+    appId: "1:507980853656:web:7df4cf83dec459979c3bed",
+    measurementId: "G-T6YDSQWTSX"
+  };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
