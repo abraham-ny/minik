@@ -2,3 +2,4 @@
 
 # minik (or miniik)
 ## Url Shortener
+Use the tool at : https://miniik.netlify.app
