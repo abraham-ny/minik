@@ -10,11 +10,50 @@
 </head>
 <body>
     <div class="container">
-        <h1>URL Shortener</h1>
-        <input type="text" id="longUrl" placeholder="Enter long URL">
-        <button onclick="shortenUrl()">Shorten URL</button>
+        <h1>
+            <span style="color: dodgerblue; font-size: 3rem;">mini</span>
+            <span style="color: black; font-size: 1.5rem;">url shortener</span>
+        </h1>
+        <div class="search-box">
+            <input type="text" id="longUrl" placeholder="Enter long URL">
+            <button onclick="shortenUrl()">Shorten URL</button>
+        </div>
         <p id="shortenedUrl"></p>
+        <p id="tips" class="typewriter"></p>
     </div>
+    <script>
+        // Typewriter effect for tips
+        const tips = [
+            "Tip: Shortened URLs are easier to share.",
+            "Tip: Use custom short codes for better recall.",
+            "Tip: Track clicks on your shortened URLs."
+        ];
+        let tipIndex = 0;
+        const typewriterElement = document.getElementById("tips");
+
+        function typeWriter() {
+            let text = tips[tipIndex];
+            let i = 0;
+            typewriterElement.innerHTML = "";
+            const interval = setInterval(() => {
+                if (i < text.length) {
+                    typewriterElement.innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        tipIndex = (tipIndex + 1) % tips.length;
+                        typeWriter();
+                    }, 3000);
+                }
+            }, 100);
+        }
+
+        window.onload = () => {
+            typeWriter();
+            checkForRedirect();
+        };
+    </script>
     <script src="interp.js"></script>
 </body>
 </html>
