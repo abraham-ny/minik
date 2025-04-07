@@ -1,46 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    margin-top: 50px;
-    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
     background-image: radial-gradient(circle, #ddd 1px, transparent 1px);
-    background-size: 20px 20px;
+    background-size: 40px 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 80%;
-    max-width: 600px;
-    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.title-main {
+    color: dodgerblue;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.title-sub {
+    color: black;
+    font-size: 2rem;
+    font-weight: lighter;
 }
 
 .search-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 input {
     width: 70%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    border: 2px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 button {
-    padding: 10px 20px;
-    background: #007bff;
+    padding: 15px 30px;
+    background: dodgerblue;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 button:hover {
@@ -49,13 +70,13 @@ button:hover {
 
 #shortenedUrl {
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #333;
 }
 
 .typewriter {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: grey;
-    margin-top: 10px;
-    height: 1.2rem; /* To prevent layout shift during typing */
+    margin-top: 20px;
+    height: 1.5rem; /* Prevent layout shift during typing */
 }
