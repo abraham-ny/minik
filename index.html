@@ -3,16 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>URL Shortener</title>
+    <title>Free URL Shortener - minik by Abraham Moruri</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="minik is a free and simple URL shortener tool by Abraham Moruri. Shorten long URLs for easier sharing without sign-in or ads.">
+    <meta name="keywords" content="free URL shortener, URL shortener tool, no sign-in URL shortener, Abraham Moruri, minik, miniLink, plp, power learn project, URL shortening service">
+    <meta name="author" content="Abraham Moruri">
+    <meta name="email" content="erh3560@gmail.com">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Free URL Shortener - minik by Abraham Moruri">
+    <meta property="og:description" content="Shorten long URLs for free with minik, a simple and ad-free URL shortener tool. No sign-in required.">
+    <meta property="og:image" content="live.png">
+    <meta property="og:url" content="https://miniik.netlify.app">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free URL Shortener - minik by Abraham Moruri">
+    <meta name="twitter:description" content="Shorten long URLs for free with minik, a simple and ad-free URL shortener tool. No sign-in required.">
+    <meta name="twitter:image" content="java.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1E90FF">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="java.png">
+
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>
-            <span style="color: dodgerblue; font-size: 3rem;" class="title-main">mini</span>
-            <span style="color: black; font-size: 1.5rem;" class="title-sub">url shortener</span>
+            <span class="title-main">mini</span>
+            <span class="title-sub">url shortener</span>
         </h1>
         <div class="search-box">
             <input type="text" id="longUrl" placeholder="Enter long URL">
